@@ -19,11 +19,50 @@
 </head>
 
 
-<body>
-
+<body class="bg-dark text-white">
+<!-- 
     <h1 class="text-center text-dark">FIZZ BUZZ DOM</h3>
 
-    <div id="Container"></div>
+    <div id="Container"></div> -->
+
+    <div class="container-fluid">
+      
+      <div class="d-flex flex-column align-items-center p-5">
+        
+        <div id="title">
+          <h1>
+            FizzBuzz Counter
+          </h1>
+        </div>
+
+        <form class="row g-2 p-5 justify-content-center align-items-center">
+      
+          <div class="col-sm-6 text-center">
+            <label for="specificSizeInputName">Your Scracth</label>
+            <input type="text" class="form-control" id="from" placeholder="Starting Number">
+          </div>
+          
+          <div class="col-sm-6 text-center">
+            <label for="specificSizeInputName">Your goal number</label>
+            <input type="text" class="form-control" id="till" 
+            placeholder="Number to Reach">
+          </div>
+          
+          <div class="col-auto">
+            <button id="findOutBtn" type="submit" class="btn btn-primary">Find Out</button>
+          </div>
+    
+          <div class="col-auto">
+            <button id="resetBtn" type="submit" class="btn btn-primary">Reset</button>
+          </div>
+        
+        </form>
+
+        <div id="fizzbuzzcontainer"></div>
+      
+      </div>
+    
+    </div>
 
 
 
